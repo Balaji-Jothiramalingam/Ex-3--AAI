@@ -4,32 +4,33 @@
 ## Aim: 
    To construct a python program to implement approximate inference using Gibbs Sampling.</br>
 ## Algorithm:
-    Step 1: Bayesian Network Definition and CPDs:
 
-       Define the Bayesian network structure using the BayesianNetwork class from pgmpy.models.
-       Define Conditional Probability Distributions (CPDs) for each variable using the TabularCPD class.
-       Add the CPDs to the network.
- Step 2: Printing Bayesian Network Structure:
-      Print the structure of the Bayesian network using the print(network) statement.
+Step 1: Bayesian Network Definition and CPDs:
+
+Define the Bayesian network structure using the BayesianNetwork class from pgmpy.models.
+Define Conditional Probability Distributions (CPDs) for each variable using the TabularCPD class.
+Add the CPDs to the network.
+Step 2: Printing Bayesian Network Structure:
+Print the structure of the Bayesian network using the print(network) statement.
 Step 3: Graph Visualization:
-      Import the necessary libraries (networkx and matplotlib).
-      Create a directed graph using networkx.DiGraph().
-      Define the nodes and edges of the graph. 
-      Add nodes and edges to the graph.
-      Optionally, define positions for the nodes.
-      Use nx.draw() to visualize the graph using matplotlib.
+Import the necessary libraries (networkx and matplotlib).
+Create a directed graph using networkx.DiGraph().
+Define the nodes and edges of the graph.
+Add nodes and edges to the graph.
+Optionally, define positions for the nodes.
+Use nx.draw() to visualize the graph using matplotlib.
 Step 4: Gibbs Sampling and MCMC:
-     Initialize Gibbs Sampling for MCMC using the GibbsSampling class and provide the Bayesian network.
-     Set the number of samples to be generated using num_samples.
- Step 5: Perform MCMC Sampling:
-   Use the sample() method of the GibbsSampling instance to perform MCMC sampling.
-   Store the generated samples in the samples variable.
- Step 6: Approximate Probability Calculation:
-   Specify the variable for which you want to calculate the approximate probabilities (query_variable).
-   Use .value_counts(normalize=True) on the samples of the query_variable to calculate approximate probabilities.
- Step 7:Print Approximate Probabilities:
-    Print the calculated approximate probabilities for the specified query_variable.
-
+Initialize Gibbs Sampling for MCMC using the GibbsSampling class and provide the Bayesian network.
+Set the number of samples to be generated using num_samples.
+Step 5: Perform MCMC Sampling:
+Use the sample() method of the GibbsSampling instance to perform MCMC sampling.
+Store the generated samples in the samples variable.
+Step 6: Approximate Probability Calculation:
+Specify the variable for which you want to calculate the approximate probabilities (query_variable).
+Use .value_counts(normalize=True) on the samples of the query_variable to calculate approximate probabilities.
+Step 7:Print Approximate Probabilities:
+Print the calculated approximate probabilities for the specified query_variable.
+    
 ## Program:
 Developed By:BALAJI J
 Reg.No:212221243001
